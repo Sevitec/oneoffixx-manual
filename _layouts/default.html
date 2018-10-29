@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/winstrap.min.css?0.5.10" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/syntax-highlighter.css" />
+
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/site.css" />
+    <script src="{{ site.baseurl }}/assets/js/vendor/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+        <script src="{{ site.baseurl }}/assets/js/vendor/html5shiv.min.js"></script>
+        <script src="{{ site.baseurl }}/assets/js/vendor/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <title>OneOffixx PowerUser Manual // {{ page.title }}</title>
+    {% seo title=false %}
+</head>
+
+<body>
+
+    {% if page.language == "en" %} 
+        {% include nav_en.html currentPermalink=page.permalink %} 
+    {% else %} 
+        {% include nav_de.html currentPermalink=page.permalink %} 
+    {% endif %} 
+    
+    {{content}}
+
+    <footer class="footer">
+        <div class="container">
+            <a style="font-size: 18pt" title="Improve on GitHub" href="{{ site.github_repo_url }}edit/gh-pages/{{ page.path }}"><i class="fa fa-github-square"></i></a>
+
+            <p class="pull-right">Sevitec Informatik AG&nbsp;&nbsp;&nbsp;I&nbsp;&nbsp;&nbsp;Bahnhofstrasse 4&nbsp;&nbsp;&nbsp;I&nbsp;&nbsp;&nbsp;8360 Eschlikon&nbsp;&nbsp;&nbsp;I&nbsp;&nbsp;&nbsp;Switzerland
+            </p>
+
+        </div>
+    </footer>
+    <script src="{{ site.baseurl }}/assets/js/vendor/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<nav class="navbar navbar-default">
+  <div class="navbar-global theme-default">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="http://www.oneoffixx.com" class="navbar-brand">
+          <img src="{{ site.baseurl }}/assets/content-images/logo.png" alt="OneOffixx" height="23" />
+        </a>
+      </div>
+      <div class="navbar-header navbar-right">
+        <a href="{{ site.baseurl }}/index-en" class="navbar-brand">
+          <i class="fa fa-globe" aria-hidden="true"></i> English
+                </a>
+      </div>
+    </div>
+  </div>
+  <div class="navbar-local color-accent theme-dark">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#oo-docs-navigation">
+          <span class="sr-only">Toggle navigation</span>
+          <i class="glyph glyph-hamburger"></i>
+        </button>
+        <a href="{{ site.baseurl }}/" class="navbar-brand">
+          <i class="fa fa-book" aria-hidden="true"></i> Docs
+                </a>
+      </div>
+      <div class="collapse navbar-collapse" id="oo-docs-navigation">
+        <ul class="nav navbar-nav">
+          <li class="{%if include.currentPermalink contains 'FirstSteps/'%}active{%endif%}">
+            <a class="color-type-secondary" href="{{ site.baseurl }}/FirstSteps/de/firststeps">Erste Schritte</a>
+          </li>
+          <!-- Trennlinie
+						 <li class="divider"></li>
+                            <li><a href="{{ site.baseurl }}/FirstSteps/de/javascript">JS Scripting</a></li>
+                            <li><a href="{{ site.baseurl }}/FirstSteps/de/uomf">Mapping</a></li>
+							
+							-->
+          <li class="dropdown {%if include.currentPermalink contains 'User_Profile/'%}active{%endif%}">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Benutzerdaten / Profile<i class="glyph glyph-chevron-down-2"></i></a>
+            <ul class="dropdown-menu" role="menu">
+              <li>
+                <a href="{{ site.baseurl }}/User_Profile/de/1_editprofile/">Profil einrichten</a>
+              </li>
+              <li>
+                <a href="{{ site.baseurl }}/User_Profile/de/3_newprofilesetup/">Profile bearbeiten</a>
+              </li>
+              <li>
+                <a href="{{ site.baseurl }}/User_Profile/de/2_standardprofile/">Profile verwenden</a>
+              </li>
+              <li>
+                <a href="{{ site.baseurl }}/User_Profile/de/4_assignou/">Profile freigeben</a>
+              </li>
+            </ul>
+          </li>
+          <!--
+                    <li class="{%if include.currentPermalink contains 'docfunc/'%}active{%endif%}">
+                        <a class="color-type-secondary" href="{{ site.baseurl }}/docfunc/de/overview">Document Function</a>
+                    </li>-->
+          <li class="dropdown {%if include.currentPermalink contains 'DocumentCreation/'%}active{%endif%}">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dokumente erstellen<i class="glyph glyph-chevron-down-2"></i></a>
+            <ul class="dropdown-menu" role="menu">
+              <!--      <li><a href="{{ site.baseurl }}/connect/de/usage/">Aufruf</a></li>
+                            <li class="divider"></li>-->
+              <li>
+                <a href="{{ site.baseurl }}/DocumentCreation/de/1_documentselection/">Dokumentauswahl</a>
+              </li>
+              <li>
+                <a href="{{ site.baseurl }}/DocumentCreation/de/4_recipient/">Empfänger / Empfängerauswahl</a>
+              </li>
+              <li>
+                <a href="{{ site.baseurl }}/DocumentCreation/de/6_addresslist/">Empfängerdetails</a>
+              </li>
+              <li>
+                <a href="{{ site.baseurl }}/DocumentCreation/de/7_editrecipient/">Empfänger bearbeiten</a>
+              </li>
+              <li>
+                <a href="{{ site.baseurl }}/DocumentCreation/de/12_addrecipientmanually/">Empfänger aus Outlook</a>
+              </li>
+			        <li>
+                <a href="{{ site.baseurl }}/DocumentEdit/de/1_documentselection/">OneOffixx Menuleiste</a>
+              </li>
+              <li>
+                <a href="{{ site.baseurl }}/DocumentEdit/de/4_recipient/">OneOffixx Nachfolgeoptionen</a>
+              </li>
+            </ul>
+          </li>
+    <!--      <li class="dropdown {%if include.currentPermalink contains 'DocumentEdit/'%}active{%endif%}">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dokumente bearbeiten<i class="glyph glyph-chevron-down-2"></i></a>
+            <ul class="dropdown-menu" role="menu">
+              <li>
+                <a href="{{ site.baseurl }}/DocumentEdit/de/1_documentselection/">OneOffixx Menuleiste</a>
+              </li>
+              <li>
+                <a href="{{ site.baseurl }}/DocumentEdit/de/4_recipient/">OneOffixx Nachfolgeoptionen</a>
+              </li>
+            </ul>
+          </li>-->
+          <li class="{%if include.currentPermalink contains 'Snippets/'%}active{%endif%}">
+            <a class="color-type-secondary" href="{{ site.baseurl }}/Snippets/de/firststeps">Textbausteine</a>
+          </li>
+          <li class="{%if include.currentPermalink contains 'Outlook/'%}active{%endif%}">
+            <a class="color-type-secondary" href="{{ site.baseurl }}/Outlook/de/firststeps">Outlook</a>
+          </li>
+          <li class="{%if include.currentPermalink contains 'Settings/'%}active{%endif%}">
+            <a class="color-type-secondary" href="{{ site.baseurl }}/Settings/de/firststeps">Einstellungen</a>
+          </li>
+          <li class="{%if include.currentPermalink contains 'FAQ/'%}active{%endif%}">
+            <a class="color-type-secondary" href="{{ site.baseurl }}/FAQ/de/firststeps">FAQ</a>
+          </li>
+          <!--    <li>
+                        <a class="color-type-secondary" href="http://oneoffixx.com/kontakt/">Kontakt</a>
+                    </li>-->
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
